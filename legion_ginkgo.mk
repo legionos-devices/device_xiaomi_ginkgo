@@ -13,12 +13,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Legion stuff.
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+
+# Inherit some common MIUICamera stuff.
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
 
+# Legion build config
+TARGET_BOOT_ANIMATION_RES := 1080
+LEGION_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_ginkgo
+PRODUCT_NAME := legion_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
