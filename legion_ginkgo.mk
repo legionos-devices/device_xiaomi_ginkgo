@@ -23,17 +23,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common Evolution X stuff
+# Inherit some common LegionOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_USES_BLUR := false
+$(call inherit-product, vendor/legion/config/common_full_phone.mk)
+
+# LegionOS
+LEGION_BUILD_TYPE := UNOFFICIAL
+LEGION_MAINTAINER := Anupam
 
 # Device identifier
-PRODUCT_NAME := evolution_ginkgo
+PRODUCT_NAME := legion_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
