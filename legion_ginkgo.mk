@@ -25,7 +25,6 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common LegionOS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_USES_BLUR := false
