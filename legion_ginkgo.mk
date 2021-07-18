@@ -29,10 +29,12 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_USES_BLUR := false
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # LegionOS
-LEGION_BUILD_TYPE := UNOFFICIAL
+LEGION_BUILD_TYPE := OFFICIAL
 LEGION_MAINTAINER := Anupam
 
 # Device identifier
