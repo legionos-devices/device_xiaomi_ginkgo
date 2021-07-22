@@ -28,8 +28,6 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_USES_BLUR := false
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
 # LegionOS
